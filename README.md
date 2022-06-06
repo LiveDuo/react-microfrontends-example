@@ -1,1 +1,6 @@
-# microfrontends-using-reactjs
+# Development
+
+```sh
+npm i
+npm start
+```
