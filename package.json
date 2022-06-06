@@ -1,0 +1,17 @@
+{
+    "name": "microfrontends-react",
+    "scripts": {
+        "start": "concurrently \"npm run header\" \"npm run blogs\" \"npm run container\"",
+        "blogs": "npm start --workspace=blogs",
+        "header": "npm start --workspace=header",
+        "container": "npm start --workspace=container"
+    },
+    "workspaces": [
+        "packages/web-app-blogs",
+        "packages/web-app-header",
+        "packages/web-container"
+    ],
+    "dependencies": {
+        "concurrently": "^7.1.0"
+    }
+}
